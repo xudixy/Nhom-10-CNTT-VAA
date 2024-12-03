@@ -1,0 +1,139 @@
+/* Container tổng */
+.product-list-container {
+  padding: 20px 40px; /* Thêm khoảng cách 40px cho bên trái và bên phải */
+  background-color: #f9f9f9;
+  display: flex;
+  margin-top: 20px;
+  justify-content: center; /* Căn giữa các thẻ con */
+  align-items: center; /* Căn giữa theo chiều dọc */
+  flex-wrap: wrap; /* Cho phép các phần tử bọc khi không đủ không gian */
+  width: 100%; /* Đảm bảo container chiếm hết chiều rộng */
+}
+
+/* Grid hiển thị sản phẩm */
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); /* Tăng kích thước tối thiểu */
+  gap: 25px; /* Tăng khoảng cách giữa các thẻ */
+  justify-items: center; /* Căn giữa các sản phẩm trong grid */
+  width: 100%; /* Đảm bảo grid chiếm hết chiều rộng */
+}
+
+/* Thẻ sản phẩm */
+.product-card {
+  border: 1px solid #ddd;
+  border-radius: 12px; /* Làm bo góc lớn hơn */
+  background-color: #fff;
+  overflow: hidden;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.15); /* Tăng độ đổ bóng */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.product-card:hover {
+  transform: translateY(-8px); /* Nổi lên cao hơn */
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
+}
+
+/* Hình ảnh sản phẩm */
+.product-image {
+  position: relative;
+  width: 100%;
+  padding-top: 70%; /* Giữ tỷ lệ hình ảnh nhưng lớn hơn */
+  overflow: hidden;
+}
+
+.product-image img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.product-image img:hover {
+  transform: scale(1.08); /* Phóng to hơn khi hover */
+}
+
+/* Thông tin sản phẩm */
+.product-info {
+  padding: 20px; /* Tăng khoảng cách bên trong */
+  text-align: center;
+}
+
+.product-info h3 {
+  font-size: 1.4rem; /* Tăng kích thước tên sản phẩm */
+  color: #333;
+  margin: 15px 0;
+  text-transform: capitalize;
+}
+
+.price {
+  color: #e74c3c; /* Màu đỏ đậm */
+  font-size: 1.2rem; /* Tăng kích thước giá */
+  font-weight: bold;
+  margin: 10px 0;
+}
+
+/* Mô tả sản phẩm */
+.description {
+  font-size: 1rem; /* Tăng kích thước mô tả */
+  color: #666;
+  margin: 15px 0;
+  display: -webkit-box;
+  -webkit-line-clamp: 2; /* Giới hạn 2 dòng */
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+/* Nút thêm vào giỏ hàng */
+.add-to-cart-btn {
+  padding: 12px;
+  background-color: #3498db;
+  color: white;
+  border: none;
+  border-radius: 8px; /* Tăng bo góc */
+  cursor: pointer;
+  font-size: 1.1rem; /* Tăng kích thước chữ */
+  transition: all 0.3s ease;
+  width: 100%;
+}
+
+.add-to-cart-btn:hover {
+  background-color: #2980b9;
+  transform: translateY(-2px);
+  transform: scale(1.1);
+}
+
+.add-to-cart-btn:active {
+  transform: translateY(0);
+}
+
+/* Khi hover vào sản phẩm */
+.product-card:hover .add-to-cart-btn {
+  background-color: #1abc9c;
+  color: white;
+}
+/* Thêm gạch màu xanh dưới tiêu đề */
+.product-list-title4 {
+  font-size: 2rem; /* Kích thước tiêu đề */
+  text-align: center;
+  margin-bottom: 20px;
+  color: #333;
+  position: relative; /* Để sử dụng ::after cho gạch dưới */
+}
+
+.product-list-title4::after {
+  content: ''; /* Tạo phần tử giả cho gạch */
+  position: absolute;
+  bottom: -5px; /* Khoảng cách gạch với tiêu đề */
+  left: 0;
+  width: 100%; /* Độ rộng gạch bằng chiều rộng tiêu đề */
+  height: 2px; /* Độ dày của gạch */
+  background-color: #3498db; /* Màu xanh của gạch */
+}

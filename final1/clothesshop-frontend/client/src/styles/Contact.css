@@ -1,0 +1,156 @@
+.contact-container {
+    padding: 60px 0;
+}
+
+.contact-title {
+    color: #333;
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    font-weight: 600;
+}
+
+.contact-subtitle {
+    color: #666;
+    font-size: 1.1rem;
+    margin-bottom: 2rem;
+}
+
+.contact-info-item {
+    padding: 30px 20px;
+    background: #f8f9fa;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+    margin-bottom: 20px;
+}
+
+.contact-info-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.contact-icon {
+    font-size: 2.5rem;
+    color: #007bff;
+    margin-bottom: 1rem;
+}
+
+.contact-info-item h3 {
+    font-size: 1.3rem;
+    color: #333;
+    margin-bottom: 1rem;
+}
+
+.contact-info-item p {
+    color: #666;
+    margin-bottom: 0.5rem;
+}
+
+.social-title {
+    color: #333;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.social-subtitle {
+    color: #666;
+    font-size: 1.1rem;
+    margin-bottom: 2rem;
+}
+
+.social-links {
+    text-align: center;
+}
+
+.social-item {
+    margin-bottom: 2rem;
+}
+
+.social-item a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-decoration: none;
+    color: #333;
+    transition: transform 0.3s ease;
+}
+
+.social-item a:hover {
+    transform: translateY(-5px);
+}
+
+.social-icon {
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.social-icon.facebook {
+    color: #1877f2;
+}
+
+.social-icon.instagram {
+    color: #e4405f;
+}
+
+.social-icon.tiktok {
+    color: #000000;
+}
+
+.social-icon.youtube {
+    color: #ff0000;
+}
+
+.shop-info {
+    background: #f8f9fa;
+    padding: 30px;
+    border-radius: 10px;
+    margin-top: 2rem;
+}
+
+.shop-info h2 {
+    color: #333;
+    font-size: 1.8rem;
+    margin-bottom: 1.5rem;
+}
+
+.shop-info p {
+    color: #666;
+    font-size: 1.1rem;
+    margin-bottom: 0.5rem;
+}
+
+.contact-form {
+    background: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0,0,0,0.1);
+}
+
+.contact-form .form-label {
+    color: #333;
+    font-weight: 500;
+}
+
+.contact-form .form-control {
+    border: 1px solid #ddd;
+    padding: 12px;
+    border-radius: 5px;
+    margin-bottom: 1rem;
+}
+
+.contact-form .form-control:focus {
+    border-color: #007bff;
+    box-shadow: none;
+}
+
+.submit-button {
+    background: #007bff;
+    border: none;
+    padding: 12px 30px;
+    font-weight: 500;
+    width: 100%;
+    transition: background-color 0.3s ease;
+}
+
+.submit-button:hover {
+    background: #0056b3;
+}

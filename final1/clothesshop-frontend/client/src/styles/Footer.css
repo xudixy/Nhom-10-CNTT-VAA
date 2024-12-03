@@ -1,0 +1,42 @@
+/* styles/Footer.css */
+
+.footer {
+  background-color: #f8f9fa; /* Màu nền xám nhạt */
+  color: #333; /* Màu chữ tối hơn để dễ đọc trên nền xám */
+  padding: 20px 10px;
+  text-align: center;
+}
+
+.footer-content {
+  max-width: 1200px;
+  margin: auto;
+}
+
+.footer-logo {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: #333; /* Màu logo */
+}
+
+.footer-socials {
+  margin: 10px 0;
+}
+
+.footer-icon {
+  margin: 0 10px;
+  color: #333; /* Màu biểu tượng */
+  font-size: 24px;
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.footer-icon:hover {
+  transform: scale(1.2);
+  color: #007bff; /* Màu xanh nhấn */
+}
+
+.footer p {
+  font-size: 14px;
+  margin-top: 10px;
+  color: #555; /* Màu chữ nhạt hơn */
+}
